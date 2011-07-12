@@ -38,8 +38,13 @@ class DynLineChartView(View):
         left, top, right, bottom = r
         h = bottom - top
         # print "w=%d,h=%d" % (right - left, h)
-        for i in range(len(data)):
+        nLen = len(data)
+        for i in range(nLen):
             c.lineto(i * 5, h - data[i])
+        c.lineto((nLen-1) * 5, pvheight)
+        c.closepath()
+        c.fill()
+        c.forecolor = red
         c.stroke()
 
 def make_label(text, **kwds):
