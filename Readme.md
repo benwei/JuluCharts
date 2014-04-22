@@ -1,6 +1,6 @@
 # Introduction
 
-This is a experiment for pyGUI.
+This is a experiment to write a chart UI by [pyGUI](http://www.cosc.canterbury.ac.nz/greg.ewing/python_gui/).
 
 # Experiments
 ## Line chart in dynamic data
